@@ -1,0 +1,83 @@
+.progress-wrapper {
+  color: #504d4d;
+}
+
+.progress-bar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.file-detail-progress-wrapper {
+  /* margin-left: 40px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  /* border: 2px solid orange; */
+  padding: 10px;
+}
+
+.file-type-wrapper > i {
+  color: #646060;
+  font-size: 50px;
+  margin-right: -30px;
+}
+
+.name-size-cancel-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .name-size-cancel-wrapper > button {
+    margin-left: 40px;
+  } */
+
+.name-size-cancel-wrapper > p {
+  text-overflow: clip;
+  font-size: 15px;
+}
+
+
+#cancel {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  color: #504d4d;
+  font-weight: 500;
+  margin-left: 75px;
+}
+
+
+#cancel i.bi{
+  pointer-events: 'none';
+}
+
+
+.percentage-speed-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --- percent-display-container START--- */
+.percent-display-container {
+  position: absolute;
+}
+
+.percent-progress-container {
+  margin: 28px;
+  display: block;
+  position: relative; /* YOUR FIX */
+  width: 200px;
+  height: 4px;
+  background-color: #d9d9d9;
+  border-radius: 2px;
+}
+
+.percent-progress {
+  width: 40%;
+  height: 100%;
+  background-color: #00c0ff;
+  border-radius: 2px;
+}

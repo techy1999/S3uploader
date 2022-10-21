@@ -1,0 +1,100 @@
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
+  min-height: 100vh;
+}
+
+.title {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.divider {
+  height: 2px;
+  width: 130vh;
+  background-color: gray;
+  margin-bottom: 40px;
+}
+
+.uploader-progress-wrapper {
+  display: flex;
+  /* border: 2px solid green; */
+  min-height: 50vh;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+/*--choose btn START-- */
+input {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+input {
+  display: none;
+}
+
+.choose-btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  background-color: #67c752;
+  color: white;
+  border-radius: 5px;
+}
+/*--choose btn END-- */
+
+/*---DRAG AREA START HERE -- */
+.drag-area-wrapper{
+  justify-items: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.drag-area-wrapper > .choose-btn{
+  margin-top: 20px;
+}
+
+.drag-area {
+  cursor: pointer;
+  border: 2px dashed #dddddd;
+  width: 300px;
+  height: 325px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.drag-area .icon {
+  color: #67c752;
+  font-size: 50px;
+}
+
+.drag-area header {
+  margin-top: 10px;
+  font-weight: 30px;
+  font-weight: 500;
+  /* color: red; */
+}
+
+.drag-area button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #67c752;
+  color: white;
+}
+/*---DRAG AREA END HERE -- */
